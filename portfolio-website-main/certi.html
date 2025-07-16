@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificates</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap JS for popovers -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      color: #3f396d;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      height: 240px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .card-body {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      color: #3f396d;
+    }
+
+    .text-muted {
+      font-size: 0.9rem;
+    }
+
+    .btn-view {
+      background-color: #3f396d;
+      color: white;
+      border: none;
+      margin-top: 10px;
+    }
+
+    .btn-view:hover {
+      background-color: #5a52a3;
+    }
+
+    .popover-header {
+      font-weight: 600;
+      background-color: #3f396d;
+      color: white;
+    }
+
+    .popover-body {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="container py-5">
+
+    <!-- Home Button -->
+    <div class="mb-4 text-start">
+      <a href="index.html" class="btn btn-outline-primary">
+        ← Home
+      </a>
+    </div>
+
+    <h1>My Certificates and Certifications</h1>
+    <div class="row justify-content-center gy-4">
+
+      <!-- Cloud Computing -->
+      <div class="col-md-4 col-sm-6">
+        <div
+          class="card"
+          tabindex="0"
+          data-bs-toggle="popover"
+          data-bs-trigger="hover focus"
+          data-bs-html="true"
+          title="Cloud Computing (NPTEL)"
+          data-bs-content='Explored IaaS, PaaS, SaaS models, virtualization, cloud security, and GCP tools.'
+        >
+          <img src="images/cloud.png" alt="Cloud Certificate">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Computing (NPTEL)</h5>
+            <p class="text-muted">Issued by NPTEL · Jul-Oct 2024</p>
+<a href="https://github.com/SANVIOJHA/certificatesandcertification/blob/main/Cloudcomputing.pdf" target="_blank" class="btn btn-view">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Stack Development -->
+      <div class="col-md-4 col-sm-6">
+        <div
+          class="card"
+          tabindex="0"
+          data-bs-toggle="popover"
+          data-bs-trigger="hover focus"
+          data-bs-html="true"
+          title="Full Stack Development (CipherSchools)"
+          data-bs-content='Built MERN stack projects. Covered CRUD, authentication, REST APIs, and deployment.'
+        >
+          <img src="images/fsd.png" alt="FSD Certificate">
+          <div class="card-body">
+            <h5 class="card-title">Full Stack Development (CipherSchools)</h5>
+            <p class="text-muted">Issued by CipherSchools · Jun-Jul 2024</p>
+            <a href="https://github.com/SANVIOJHA/certificatesandcertification/raw/main/FSD%20USING%20MERN%201.pdf" target="_blank" class="btn btn-view">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prompt Engineering -->
+      <div class="col-md-4 col-sm-6">
+        <div
+          class="card"
+          tabindex="0"
+          data-bs-toggle="popover"
+          data-bs-trigger="hover focus"
+          data-bs-html="true"
+          title="Prompt Engineering (Coursera)"
+          data-bs-content='Learned to design effective prompts for LLMs including zero-shot, few-shot, and CoT methods.'
+        >
+          <img src="images/promt.png" alt="Prompt Engineering Certificate">
+          <div class="card-body">
+            <h5 class="card-title">Prompt Engineering (Coursera)</h5>
+            <p class="text-muted">Issued by Coursera · Nov-Feb 2024</p>
+            <a href="https://github.com/SANVIOJHA/certificatesandcertification/raw/main/prompt%20engineering%20for%20everyone.pdf" target="_blank" class="btn btn-view">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Excel Certificate -->
+      <div class="col-md-4 col-sm-6">
+        <div
+          class="card"
+          tabindex="0"
+          data-bs-toggle="popover"
+          data-bs-trigger="hover focus"
+          data-bs-html="true"
+          title="Microsoft Excel (Coursera)"
+          data-bs-content='Mastered Excel formulas, functions, pivot tables, charts, and data analysis.'
+        >
+          <img src="images/excel.jpeg" alt="Excel Certificate">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Excel (Coursera)</h5>
+            <p class="text-muted">Issued by Coursera · Apr-May 2024</p>
+            <a href="https://github.com/SANVIOJHA/certificatesandcertification/blob/main/excel.pdf" target="_blank" class="btn btn-view">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap popover initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      popoverTriggerList.forEach(function (el) {
+        new bootstrap.Popover(el, {
+          html: true,
+          placement: 'right'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
